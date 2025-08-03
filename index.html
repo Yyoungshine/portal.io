@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <header class="row">
+                <div class="logo">
+                    <img src="./images/Logo.png" width="150" alt="Prestige Logo">
+                </div>
+
+                <nav id="nav" >
+                    <ul class="row">
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Calender</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#" class="active">Login</a></li>
+                    </ul>
+                </nav>
+
+                <button id="menu" ><i class="fa-solid fa-bars" id="menu-icon"></i></button>
+            </header>
+
+            <div class="hero-content row">
+                <div class="hero-message">
+                    <h1 id="greeting" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">Welcome to Your Learning Hub</h1>
+                    <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">Empowering the next generation of developers & tech leaders</p>
+                    <a href="#" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">Continue Learning</a>
+                </div>
+                <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="./images/Guy with Laptop.png" width="300" alt="Guy with Laptop">
+                </div>
+            </div>
+        </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C02B00" fill-opacity="1" d="M0,192L20,197.3C40,203,80,213,120,202.7C160,192,200,160,240,160C280,160,320,192,360,213.3C400,235,440,245,480,218.7C520,192,560,128,600,122.7C640,117,680,171,720,170.7C760,171,800,117,840,101.3C880,85,920,107,960,133.3C1000,160,1040,192,1080,213.3C1120,235,1160,245,1200,240C1240,235,1280,213,1320,176C1360,139,1400,85,1420,58.7L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+
+    <section class="courses-section">
+        <h1>My Course</h1>
+        <div class="courses row">
+        <div class="course" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="1000">
+            <div class="course-details row" id="course-details">
+                <i class="fa-solid fa-code" id="icon"></i>
+                <p>Web Development</p>
+            </div>
+            <input type="range" value="80">
+            <p>Progress 80%</p>
+        </div>
+        <div class="course" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000">
+            <div class="course-details row" id="course-details">
+                <i class="fa-solid fa-magnifying-glass-chart" id="icon"></i>
+                <p>Data Science</p>
+            </div>
+            <input type="range" value="30">
+            <p>Progress 30%</p>
+        </div>
+        <div class="course" data-aos="fade-down-left" data-aos-duration="2000" data-aos-delay="3000">
+            <div class="course-details row" id="course-details">
+                <i class="icon fa-solid fa-laptop" id="icon3"></i>
+                <p>Machine Learning</p>
+            </div>
+            <input type="range" value="70">
+            <p>Progress 70%</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <h1>Upcoming Events</h1>
+        <div class="events-container">
+        <div class="events events-box">
+            <div class="event row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <div class="event-day">
+                    <p>July</p>
+                    <p>31</p>
+                </div>
+                <div class="event-details">
+                    <p class="event-title">Coding Webinar</p>
+                    <p class="even-time"><span>10 AM</span> <span>Online</span></p>
+                </div>
+            </div>
+            <div class="event row" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
+                <div class="event-day">
+                    <p>Aug.</p>
+                    <p>21</p>
+                </div>
+                <div class="event-details">
+                    <p class="event-title">Project Presentation</p>
+                    <p class="even-time"><span>12 PM</span> <span>Zoom</span></p>
+                </div>
+            </div>
+            <div class="event row" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="3000">
+                <div class="event-day">
+                    <p>Sept.</p>
+                    <p>20</p>
+                </div>
+                <div class="event-details">
+                    <p class="event-title">Final Exam</p>
+                    <p class="even-time"><span>7 PM</span> <span>Meet</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="others events-box">
+            <div class="recordings" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <i class="fa-solid fa-play others-icon" ></i>
+                <p>Lecture Recordings</p>
+            </div>
+            <div class="recordings" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
+                <i class="fa-solid fa-compass others-icon"></i>
+                <p>Assignments</p>
+            </div>
+            <div class="recordings" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="3000">
+                <i class="fa-solid fa-person-circle-question others-icon"></i>
+                <p>Discussion Forum</p>
+            </div>
+            <div class="recordings" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="4000">
+                <i class="fa-solid fa-question others-icon"></i>
+                <p>FAQ</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="support-section" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+        <h1>Support</h1>
+        <p><span>Need Help?</span> Reach Out to Your Mentor or Support Team.</p>
+        <a href="#" class="contact">Contact Support</a>
+    </section>
+
+    <footer>
+        <p>&#169; 2025 Prestige Coding and Technology Ltd. All Right Reserved.</p>
+    </footer>
+    </main>
+
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

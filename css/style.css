@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0px 15px 20px rgba(0,0,0, 0.4);
+    border-radius: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.hero{
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.hero header{
+    padding: 1rem 4rem;
+}
+
+.hero header nav{
+    width: 50%;
+}
+
+.hero header nav ul{
+    list-style-type: none;
+}
+
+.hero header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.hero header nav ul li:hover, 
+.hero header nav ul li a.active, 
+.hero header nav ul li a:hover
+{
+    background-color: #C02B00;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    transition: 1s ease;
+}
+
+/* Menu */
+    #menu{
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        display: none;
+    }
+/* Menu Ends */
+
+.hero-message{
+    padding: 1rem 4rem;
+    width: 50%;
+}
+
+.hero-message h1{
+    font-size: 2.5rem;
+
+}
+
+.hero-message p{
+    font-size: 25px;
+    padding: 1rem 0;
+    line-height: 2.3rem;
+}
+
+.hero-message a, .contact{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #C02B00;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.hero-message a:hover, .contact:hover{
+    background: transparent;
+    border: 1px solid #C02B00;
+    color: #000;
+    transition: 1s ease;
+}
+
+/* courses-section CSS */
+
+.courses-section{
+    background-color: #fff;
+    padding: 3rem 5rem;
+}
+
+.courses-section h1{
+    font-size: 30px;
+    margin-bottom: 1.3rem;
+}
+
+.course{
+    background-color: rgba(255,153,52, 0.2);
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.course:last-child{
+    background-color: #C02B00;
+    color: #fff;
+}
+
+
+.course-details{
+    margin-bottom: 1.5rem;
+}
+
+#icon, #icon3 {
+    background-color: #C02B00 !important;
+    color: #fff !important;
+    font-size: 27px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: .8rem;
+}
+
+#icon3{
+     background-color:  rgba(255,153,52, 0.3) !important;
+}
+
+.course-details p{
+    font-size: 24px;
+}
+
+.course input{
+    width: 100%;
+    margin-bottom: .5rem;
+}
+/* courses-section CSS end*/
+
+/* event-section CSS */
+
+.event-section{
+    padding: 0 5rem 3rem 5rem;
+}
+
+.event-section h1{
+    font-size: 30px;
+    padding-bottom: 1.3rem;
+}
+
+.events-container{
+    display: flex;
+}
+
+.events-box{
+    width: 42%;
+}
+
+.event{
+    margin-top: 2%;
+    background-color: rgba(255,153,52, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.event .event-day{
+    background-color: #fff;
+    padding: .2rem .5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.event .event-details{
+    width: 80%;
+}
+
+/* recordings section */
+
+.others{
+    width: 58% !important;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 1rem; */
+}
+
+.recordings{
+    width: 45%;
+    background-color: rgba(255,153,52, 0.3);
+    margin: 2% 0% 2% 5%;
+    padding: 2.5rem 3rem 2rem 3rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.others-icon{
+    background-color: #C02B00 !important;
+    color: #fff !important;
+    font-size: 2rem !important;
+    padding: .7rem;
+    border-radius: 8px;
+    margin-bottom: 1.1rem;
+}
+
+.recordings p{
+    font-weight: 800;
+}
+/* recordings section  end*/
+
+/* event-section CSS  End*/
+
+/* support-section */
+.support-section{
+    padding: 0 5rem 3rem 5rem;
+}
+
+.support-section h1{
+    font-size: 30px;
+    padding-bottom: 1.3rem;
+}
+
+.support-section p{
+    font-size: 22px;
+    margin-bottom: 1.2rem;
+}
+
+.support-section p span{
+    font-weight: 700;
+}
+
+/* support-section  ends*/
+
+/* Footer Section Styling */
+
+footer{
+    text-align: center;
+    background-color: rgba(255,153,52, 0.3);
+    padding: 2rem 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* Footer Section Styling Ends */
+
+/* Mobile Version */
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+@media (max-width: 768px){
+    body{
+        background-color: #C02B00;
+    }
+
+    main{
+        background-color: #fff;
+    }
+
+    header{
+        background: #C02B00;
+        position: relative;
+        width: 100% !important;
+    }
+
+    header nav{
+        width: 100% !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(255,153,52, 1) !important;
+        padding: 2rem 0;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        display: none;
+
+    }
+
+    header nav ul{
+        flex-direction: column !important;
+    }
+
+    header nav ul li{
+        line-height: 3.5rem;
+    }
+
+     header nav ul li a{
+        /* font-weight: 800; */
+        font-size: 1.5rem;
+     }
+    #menu{
+        display: block;
+        color: #fff;
+    }
+
+    /* hero-content */
+    .hero-content{
+        display: inline-block !important;
+    }
+
+    .hero-message{
+        width: 100% !important;
+        text-align: center;
+        padding: 2rem 1rem !important;
+    }
+
+    .hero-message h1{
+        font-size: 2.2rem;
+    }
+
+    .hero-message p{
+        font-size: 20px;
+    }
+    /* hero-content Ends*/
+
+    /* courses */
+
+    .courses-section{
+        padding: 2rem 1rem;
+    }
+
+    .courses{
+        display: block !important;
+    }
+
+    .courses .course{
+        width: 100% !important;
+        margin-bottom: 1.5rem;
+    }
+    /* courses  Ends*/
+
+    /* event-section */
+
+    .event-section{
+        padding: 2rem 1rem;
+    }
+
+    .events-container{
+        display: block;
+    }
+
+    .events, .others{
+        width: 100% !important;
+    }
+
+    .others{
+        display: block;
+    }
+
+    .others .recordings{
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-bottom: 1rem;
+    }
+    /* event-section Ends*/
+
+    /* support-section */
+
+    .support-section{
+        padding: 0 1rem 2rem 1rem;
+        text-align: center;
+    }
+    /* support-section Ends*/
+}
+/* Mobile Version Ends*/
